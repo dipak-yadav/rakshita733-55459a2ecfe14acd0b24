@@ -1,0 +1,24 @@
+.container{
+  max-width: 1140px;
+  margin: 100px;
+  margin-left: 387px;
+}
+button.btn.btn-outline-primary{
+  margin: 15px
+}
+button.btn.btn-outline-secondary{
+  margin: 5px
+}
+
+img.card-img-top.country-img {
+  width: 32%;
+  margin: 8px;
+}
+
+.card.country-card {
+  width: 20%;
+  float: left;
+  margin: 5px;
+}
+
+
