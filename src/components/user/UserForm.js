@@ -44,14 +44,12 @@ const UserForm = ({ dispatch }) => {
 
   return (
     <div>
-      <h3>User Details</h3>
-      <div className="container"></div>
       <form>
-        <div classNames="form-group">
-          <label for="country">Country</label>
+        <div className="form-group">
+          <label htmlFor="country">Country : </label>
           <input
             type="country"
-            classNames="form-control"
+            className="form-control"
             id="country"
             placeholder=" Enter country"
             required
@@ -62,7 +60,7 @@ const UserForm = ({ dispatch }) => {
 
         <button
           type="submit"
-          classNames="btn btn-primary"
+          className="btn btn-primary"
           disabled={isDisable}
           onClick={onSubmit}
         >

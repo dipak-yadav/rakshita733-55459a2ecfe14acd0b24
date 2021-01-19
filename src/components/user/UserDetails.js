@@ -14,18 +14,16 @@ const mapStateToProps = ({ dispatch, user }) => ({
   user,
 });
 
-const UserFormDetails = ({ countryName, user }) => {
+const UserFormDetails = ({}) => {
   const history = useHistory();
   const { id } = useParams();
 
   const [userData, setUserData] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`https://restcountries.eu/rest/v2/name/` + id)
-      .then((res) => {
-        setUserData(res.data);
-      });
+    axios.get(`https://restcountries.eu/rest/v2/name/` + id).then((res) => {
+      setUserData(res.data);
+    });
   }, [id]);
 
   const onClickBtn = (capital) => {
